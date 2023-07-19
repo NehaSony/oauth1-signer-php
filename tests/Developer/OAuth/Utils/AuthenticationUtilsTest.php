@@ -25,7 +25,7 @@ class AuthenticationUtilsTest extends TestCase {
     public function testLoadSigningKey_ShouldReturnKey() {
 
         // GIVEN
-        $keyContainerPath = './resources/test_key_container.p12';
+        $keyContainerPath = './resources/test_key.p12';
         $keyAlias = 'mykeyalias';
         $keyPassword = 'Password1';
 
@@ -43,7 +43,7 @@ class AuthenticationUtilsTest extends TestCase {
         $this->expectExceptionMessage('Failed to open keystore with the provided password!');
 
         // GIVEN
-        $keyContainerPath = './resources/test_key_container.p12';
+        $keyContainerPath = './resources/test_key.p12';
         $keyAlias = 'mykeyalias';
         $keyPassword = 'Wrong password';
 
