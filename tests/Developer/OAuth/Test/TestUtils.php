@@ -17,6 +17,6 @@ class TestUtils
     }
 
     public static function getTestSigningKey() {
-        return AuthenticationUtils::loadSigningKey('./resources/test_key_container.p12','mykeyalias', 'Password1');
+        return AuthenticationUtils::loadSigningKey('./resources/test_key.p12','mykeyalias', 'Password1');
     }
 }
